@@ -40,11 +40,6 @@ public class AdvancePlaywrightTest {
             Locator selectedOption = page.locator("#dropdown option[selected='selected']");
             assertThat(selectedOption).hasText("Option 2");
 
-            // 7. SCREENSHOT: Take a screenshot of the final page state for validation
-            page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("screenshot.png")));
-
-            // Clean up and close
-            browser.close();
-        }
+        
     }
 }
