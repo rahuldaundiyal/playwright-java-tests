@@ -7,7 +7,7 @@ public class hjm {
         System.out.println(message);
         System.out.println("Roll Number: " + Roll);
         System.out.println("Character: " + character);
-        System.out.println("Income: " + income);
+        System.out.println(
 
     :
 
