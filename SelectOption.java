@@ -1,0 +1,6 @@
+/**
+ * SelectOption
+ */
+public class SelectOption {
+
+}
