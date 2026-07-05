@@ -13,7 +13,7 @@ public class submitTest {
         try (Playwright playwright = Playwright.create()) {
 
             Browser browser = playwright.chromium().launch(
-                    new ().setHeadless(true));
+                    new BrowserType.LaunchOptions().setHeadless(true));
 
             Page page = browser.newPage();
 
