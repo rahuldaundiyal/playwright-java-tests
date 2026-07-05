@@ -1,6 +1,1 @@
-/**
- * SelectOption
- */
-public class SelectOption {
 
-}
