@@ -13,7 +13,7 @@ public class submitTest {
         try (Playwright playwright = Playwright.create()) {
 
             Browser browser = playwright.chromium().launch(
-                    new BrowserType.LaunchOptions().setHeadless(true));
+                    new ().setHeadless(true));
 
             Page page = browser.newPage();
 
@@ -27,7 +27,10 @@ public class submitTest {
             // Click the Login button
             page.click("button[type='submit']");
 
-            
+            // Verify successful login
+            Locator successMessage = page.locator("#flash");
+
+            assertTrue(successMessage.textContent().contains("You logged into a secure area!"));
 
             System.out.println("Login submitted successfully.");
 
