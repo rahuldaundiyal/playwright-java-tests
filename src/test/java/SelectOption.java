@@ -1,6 +1,4 @@
-
 import com.microsoft.playwright.*;
-import com.microsoft.playwright.options.SelectOption;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -8,7 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SelectOption {
 
     @Test
-    void testDropdownSelection() {
+    void selectDropdownOption() {
+
         try (Playwright playwright = Playwright.create()) {
 
             Browser browser = playwright.chromium().launch(
@@ -16,20 +15,17 @@ public class SelectOption {
 
             Page page = browser.newPage();
 
-            // Open the dropdown page
+            // Navigate to the dropdown page
             page.navigate("https://the-internet.herokuapp.com/dropdown");
 
-            // Locate the dropdown
-            Locator dropdown = page.locator("#dropdown");
+            // Select Option 1
+            page.selectOption("#dropdown", "1");
 
-            // Select "Option 2"
-            dropdown.selectOption(new SelectOption().setLabel("Option 2"));
+            // Verify selected value
+            String selectedValue = page.locator("#dropdown").inputValue();
+            assertEquals("1", selectedValue);
 
-            // Verify the selected value
-            String selectedValue = dropdown.inputValue();
-            assertEquals("2", selectedValue);
-
-            System.out.println("Dropdown selection verified successfully!");
+            System.out.println("Option 1 selected successfully.");
 
             browser.close();
         }
