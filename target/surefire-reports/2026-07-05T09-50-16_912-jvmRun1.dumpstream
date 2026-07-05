@@ -1,0 +1,57 @@
+# Created at 2026-07-05T09:50:34.235
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Downloading Chromium 131.0.6778.33 (playwright build v1148)[2m from https://playwright.azureedge.net/builds/chromium/1148/chromium-mac.zip[22m'.
+
+# Created at 2026-07-05T09:50:37.926
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|                                                                                |   0% of 127.1 MiB'.
+
+# Created at 2026-07-05T09:50:40.443
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|■■■■■■■■                                                                        |  10% of 127.1 MiB'.
+
+# Created at 2026-07-05T09:50:42.485
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|■■■■■■■■■■■■■■■■                                                                |  20% of 127.1 MiB'.
+
+# Created at 2026-07-05T09:50:44.389
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 127.1 MiB'.
+
+# Created at 2026-07-05T09:50:46.165
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 127.1 MiB'.
+
+# Created at 2026-07-05T09:50:48.478
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 127.1 MiB'.
+
+# Created at 2026-07-05T09:50:50.512
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 127.1 MiB'.
+
+# Created at 2026-07-05T09:50:52.720
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 127.1 MiB'.
+
+# Created at 2026-07-05T09:50:55.323
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 127.1 MiB'.
+
+# Created at 2026-07-05T09:50:57.995
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 127.1 MiB'.
+
+# Created at 2026-07-05T09:51:06.204
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 127.1 MiB'.
+
+# Created at 2026-07-05T09:51:06.205
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Chromium 131.0.6778.33 (playwright build v1148) downloaded to /Users/renesebera/Library/Caches/ms-playwright/chromium-1148'.
+
+# Created at 2026-07-05T09:51:07.978
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Downloading Chromium Headless Shell 131.0.6778.33 (playwright build v1148)[2m from https://playwright.azureedge.net/builds/chromium/1148/chromium-headless-shell-mac.zip[22m'.
+
+# Created at 2026-07-05T09:51:08.465
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '|                                                                                |   0% of 79.8 MiB'.
+
+# Created at 2026-07-05T09:51:08.632
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: EXIT
+java.io.EOFException
+	at org.apache.maven.surefire.api.stream.AbstractStreamDecoder.read(AbstractStreamDecoder.java:444)
+	at org.apache.maven.surefire.api.stream.AbstractStreamDecoder.read(AbstractStreamDecoder.java:419)
+	at org.apache.maven.surefire.api.stream.AbstractStreamDecoder.readMessageType(AbstractStreamDecoder.java:116)
+	at org.apache.maven.surefire.booter.stream.CommandDecoder.decode(CommandDecoder.java:77)
+	at org.apache.maven.surefire.booter.spi.CommandChannelDecoder.decode(CommandChannelDecoder.java:60)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:290)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+
+
