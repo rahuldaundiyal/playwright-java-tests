@@ -25,7 +25,7 @@ jobs:
         cache: 'maven' # Automatically caches your dependencies for faster runs
 
     - name: Install Project Dependencies
-      run: mvn clirr:check || mvn compile # Ensures everything compiles
+      run: mvn compile # Ensures everything compiles
 
     - name: Ensure Playwright Browsers are Installed
       run: mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install --with-deps"
