@@ -1,5 +1,7 @@
 name: Playwright End-to-End Tests
 
+
+
 # Step 1: Define the triggers (Events)
 on:
   push:
@@ -7,10 +9,12 @@ on:
   pull_request:
     branches: [ main ]
 
+
 # Step 2: Define the execution environment (Jobs & Runners)
 jobs:
   run-playwright-tests:
     runs-on: ubuntu-latest
+
 
     # Step 3: Sequential list of actions (Steps)
     steps:
@@ -32,6 +36,8 @@ jobs:
 
     - name: Execute Playwright Tests
       run: mvn test
+
+
 
     # Step 4: Save reports even if tests fail (Artifacts)
     - name: Upload Test Report & Screenshots

@@ -3,7 +3,7 @@ import com.microsoft.playwright.options.SelectOption;
 import org.junit.jupiter.api.Test;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
-public class SecondPlaywrightTest {
+public class secondPlaywrightTest {
 
     @Test
     void testAdvancedInteractions() {
