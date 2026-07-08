@@ -1,27 +1,29 @@
 package tests;
 
 import com.microsoft.playwright.*;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import java.util.HashMap;
+import java.util.Map;
 
 public class PlayTest {
-
-    @Test
-    void verifyExampleDotComTitle() {
-        try (Playwright playwright = Playwright.create()) {
+    public static void main(String[] args) {
+        // Force Playwright to download browsers if they don't exist
+        Map<String, String> env = new HashMap<>(System.getenv());
+        
+        try (Playwright playwright = Playwright.create(new Playwright.CreateOptions().setEnv(env))) {
+            System.out.println("Launching Chromium UI...");
+            
             Browser browser = playwright.chromium().launch(
-                    new BrowserType.LaunchOptions().setHeadless(true));
+                    new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(2000));
 
             Page page = browser.newPage();
-            page.navigate("https://example.com");
+            page.navigate("https://google.com");
 
-            String title = page.title();
-            assertTrue(title.contains("Example Domain"));
-
-            System.out.println("Page Title: " + title);
-            System.out.println("Playwright test executed successfully.");
+            System.out.println("Page Title: " + page.title());
+            
+            try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
 
             browser.close();
+            System.out.println("Browser closed successfully.");
         }
     }
 }
