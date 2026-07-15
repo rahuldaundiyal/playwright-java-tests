@@ -17,13 +17,16 @@ public class PlayTest {
 
             Page page = browser.newPage();
             page.navigate("https://google.com");
+        
 
             System.out.println("Page Title: " + page.title());
             
-            try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
+            try { Thread.sleep(3000); } 
+            catch (InterruptedException e) { e.printStackTrace(); }
 
             browser.close();
-            System.out.println("Browser closed successfully.");
+            System.out.println("successfully ");
+
         }
     }
 }

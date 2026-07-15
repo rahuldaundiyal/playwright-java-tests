@@ -1,0 +1,134 @@
+###open browser of  chromiummvn 
+mvn exec:java -Dexec.mainClass="tests.PlayTest" -Dexec.classpathScope="test"
+
+
+ ######push the code in git #####
+
+ git add .
+ git commit -m "feat: configure PlayTest with package tests and visible Chromium browser"
+git push origin main
+
+
+
+##########
+///As an automation tester, your daily work often looks like this:
+///This is the workflow you'll see in many teams.
+
+Write or update Playwright test
+        ↓
+Commit changes
+        ↓
+Push to GitHub
+        ↓
+GitHub Actions starts
+        ↓
+Tests execute automatically
+        ↓
+Report generated
+        ↓
+If tests fail, fix the issue
+
+////Run this workflow whenever someone pushes code to GitHub.
+///After git push, GitHub automatically starts the workflow.
+git add .
+git commit -m "Added Login Test"
+git push
+
+##This runs the same Maven command you would execute locally.
+Cleans previous build files.
+Compiles the project.
+Runs your Playwright tests.##
+
+run: mvn clean test
+
+
+////////When you pushed your code
+VS Code
+     ↓
+git push
+     ↓
+GitHub
+     ↓
+GitHub Actions Triggered
+     ↓
+Ubuntu Runner Created
+     ↓
+Repository Downloaded
+     ↓
+Java Installed
+     ↓
+Maven Executed
+     ↓
+Playwright Tests Ran
+     ↓
+Workflow Passed ✅
+You didn't have to manually log into another machine or run commands there. GitHub did it for you.////
+
+
+
+//////You now understand:
+
+✅ What CI/CD is
+✅ Why companies use CI/CD
+✅ What GitHub Actions is
+✅ What a workflow is
+✅ What a job is
+✅ What a step is
+✅ What a runner is
+✅ What triggers a workflow
+✅ How a basic Java + Maven + Playwright pipeline works
+
+That's a solid foundation.\\\\\\\\\\
+
+package tests;
+import java.util.Scanner;
+public class DemoTest {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+        String call = "Ankit";
+        int id = 201;
+        boolean softwaretester = true;
+        double salary= 23700
+
+        System.output.primtln("name:' + call);
+                System.output.primtln("idno:' + "id");
+        System.output.primtln("profile:' + "softwaretester");
+        System.output.primtln("name:' + call);
+        System.output.primtln("incomesalary:' + salary);
+
+
+    }
+}
+
+public class nestedifdemo {
+
+    public static void main (String[]args){
+
+        String username ="admin";
+        int password = 12345;
+    
+        if username==("admin"){
+            if password==("12345"){
+                System.out.println("loginsuccessful")
+                }else{
+                    System.out.println("wrong password");
+                           }else{
+                              System.out.println("wrong username");   
+                            }
+                        }
+                    }
+                
+public class nestedifdemo {
+
+    public static void main (String[]args){
+
+      for (k=10; k<=10; k++){
+         System.out.println(k) 
+     }
+        
+         
+        
+      }
+}  
+
+ 
